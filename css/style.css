@@ -1,0 +1,28 @@
+/* * CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * Generics */
+body{
+    font-family: ;
+    background-color: blue;
+}
+
+
+/* * Utilities */
+.generic-container{
+    max-width: 1400px;
+    margin: 0 auto;
+
+    /* ! Temporary rule */
+    border: 2px solid red;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
