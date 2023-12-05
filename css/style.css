@@ -23,17 +23,15 @@ body{
 
 .content-container{
     display: flex;
+    flex-direction: column;
     height: calc(100vh - 100px);
     width: 100%;
     overflow: auto;
 
     
     /* ! Temporary rules */
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: cornflowerblue;
-    padding: 15px;
+   
+    background-color: rgb(20, 25, 34);
 }
 
 img{
@@ -53,17 +51,22 @@ main{
 
 /* * Main - navbar */
 nav{
-    height: calc(100vh - 100px);
-    width: 15%;
+    flex-basis: 50px;
     background-color: rgb(0, 0, 0);
-    overflow: auto;
 
-    /* ! Temporary rules */
-    color: white;
-    writing-mode: vertical-rl;
-    padding: 100px 30px 0px 0px;
 }
 
+/* * Main - header */
+header{
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.300);
+    position: sticky;
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid red;
+}
 
 
 
