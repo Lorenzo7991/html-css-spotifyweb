@@ -44,6 +44,12 @@ a{
     background-color: rgb(20, 25, 34);
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .btn{
     display: inline-block;
     padding: 5px 10px;
@@ -55,6 +61,14 @@ a{
     border-radius: 10px;
 }
 
+.btn:hover{
+    scale: 1.1;
+}
+
+.icon:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
 
 
 /* * Main */
@@ -79,17 +93,21 @@ nav{
     width: 25px;
 }
 
-.navbar-icons .labels {
+.navbar-icons .items {
     margin-top: 10px;
 }
 
-.hammering-icon {
+.hammering-icon-behavior {
     margin: 10px 0;
     font-size: 20px;
 }
 
+.grayscale-svg{
+    filter: grayscale(100%);
+}
+
 .fa-color{
-    color: white;
+    color: rgb(157, 157, 157);
 }
 
 /* * Main - header */
@@ -113,13 +131,124 @@ header{
     font-size: 12px;
     font-weight: 600;
     padding: 12px 30px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
+
+
+
+
+
 
 
 /* * Footer */
 footer{
     height: 100px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: rgb(40, 40, 40);
 }
+/* * Footer - currently song section rules */
+.currently-playing{
+    flex-basis: 32%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currently-song-img{
+    max-width: 40px;   
+    margin-left: 10px;
+    text-align: center; 
+}
+
+.currently-song-info h4 a{
+    color: white;
+    font-size: 14px;
+}
+
+.currently-song-info p a{
+    color: rgb(117, 119, 124);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.saved-favorites{
+    margin: 0 10px;
+}
+
+.saved-favorites-list{
+    color: rgb(117, 119, 124);
+}
+
+/* * Footer - media player section rules */
+.media-player{
+    flex-grow: 1;
+}
+/* * Media player - top section rules */
+.top-mediaplayer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: white;
+}
+
+.player {
+    font-size: 30px;
+}
+
+/* * Media player - loading bar section rules */
+.media-player-loadingbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+
+.media-player-loadingbar p{
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    
+}
+
+.empty-loadingbar{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(117, 119, 124);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.loading-bar {
+    width: 20%;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: absolute;
+    left: 20px;
+}
+
+
+
+/* * Footer - songs panel rules */
+.songs-control-panel{
+    flex-basis: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px dotted white;
+}
+
+.songs-control-list{
+    display: flex;
+    position: relative;
+}
+
+.songs-control-list a{
+    color: white;
+}
+    
