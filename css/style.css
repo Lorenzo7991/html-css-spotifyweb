@@ -62,14 +62,19 @@ a{
 }
 
 .btn:hover{
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .icon:hover{
-    scale: 1.2;
+    transform: scale(1.2);
     cursor: pointer;
 }
 
+.active{
+    width: 30px;
+    height: 4px;
+    background-color: goldenrod;
+}
 
 /* * Main */
 main{
@@ -81,34 +86,34 @@ main{
 
 /* * Main - navbar */
 nav{
-    flex-basis: 50px;
+    width: 50px;
+    /* height: calc(100vh - 100px); */
     background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
-.logo{
-    margin-top: 5px;
-    width: 25px;
+  
 }
 
-.navbar-icons .items {
+.logo-navbar .logo-sm{
+    width: 100%;
+    max-height: 25px;
     margin-top: 10px;
 }
 
-.hammering-icon-behavior {
-    margin: 10px 0;
-    font-size: 20px;
+/* .navbar-menu{
+    min-height: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
-.grayscale-svg{
-    filter: grayscale(100%);
+.menu-top{
+    min-height: 50px;
+    border: 1px dotted white;
 }
 
-.fa-color{
-    color: rgb(157, 157, 157);
+.menu-bottom{
+    min-height: 50px;
+    border: 1px dotted white;
 }
+ */
 
 /* * Main - header */
 header{
@@ -128,12 +133,24 @@ header{
     background-color: transparent;
     text-transform: uppercase;
     border-radius: 30px;
-    font-size: 12px;
+    font-size: 9px;
     font-weight: 600;
     padding: 12px 30px;
     margin-right: 10px;
 }
 
+/* ^ MAIN - content list */
+.content-list{/* 
+    width: calc(100% / 4); */
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px;
+    font-size: 10px;
+    
+}
+.content-list a{
+    color: rgb(117, 119, 124);
+}
 
 
 
@@ -169,8 +186,9 @@ footer{
 
 .currently-song-info p a{
     color: rgb(117, 119, 124);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
+    padding: 0;
 }
 
 .saved-favorites{
@@ -232,23 +250,42 @@ footer{
     left: 20px;
 }
 
-
-
 /* * Footer - songs panel rules */
 .songs-control-panel{
     flex-basis: 32%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    border: 1px dotted white;
 }
 
 .songs-control-list{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
 .songs-control-list a{
     color: white;
+    margin: 5px;
+    font-size: 12px;
 }
     
+.songs-control-empty-loadigbar{
+    position: relative;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(117, 119, 124);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.songs-control-loading-bar{
+    width: 40%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+    position: absolute;
+    right: 50px;
+}

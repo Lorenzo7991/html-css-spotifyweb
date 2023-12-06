@@ -28,40 +28,40 @@
         <main class="main-section">
             <!-- * Side navbar section -->
             <nav class="navbar">
-                <!-- * Icons top navbar section -->
-                <div class="navbar-icons">
-                    <!-- * top navbar logo -->
-                    <div id="logo-spotify" class="logo"><a href="#"><img src="assets/img/logo-small.svg" alt="Spotify-navbar-logo"></a></div>
-                    <!-- * top navbar icon links structure -->
-                    <ul class="navbar-icons-list">
-                        <li class="items"><a href="#" class="icon home"><img class="icons-img" src="assets/img/home.svg" alt="home-icon"></a></li>
-                        <li class="items"><a href="#" class="icon search"><img class="icons-img" src="assets/img/search.svg" alt="search-icon"></a></li>
-                        <li class="items"><a href="#" class="icon library"><img class="icons-img" src="assets/img/libreria.svg" alt="library-icon"></a></li>
-                    </ul>
-                </div>
-                <!-- * bottom navbar container -->
-                <div class="navbar-bottom-icons">
-                    <!-- * bottom navbar list structure -->
-                    <ul class="navbar-icons-list">
-                        <li class="items"><a href="#" class="label-donwload"><img class="icons-img" src="assets/img/download.svg" alt="donwload-label"></a></li>
-                        <li class="hammering-icon-behavior"><a href="#" class="label-user"><i class="fa-solid fa-user fa-color"></i></a></li>
-                    </ul>
-                </div>
+               <div id="logo" class="logo-navbar">
+                   <img class="logo-sm" src="assets/img/logo-small.svg" alt="logo-spotify">
+                <img class="logo" src="assets/img/logo.svg" alt="logo-spotify">
+               </div>
+               <div class="navbar-menu">
+                <div class="menu-top"></div>
+                <div class="menu-bottom"></div>
+               </div>
+    
             </nav>
             <!-- * Main content section -->
-            <section class="content-container">
+            <div class="content-container">
                 <header class="header-main-container">
                     <a href="#" class="btn btn-header">Effettua l'upgrade</a>
                 </header>
-            </section>
-
-
-
-
-
-
-
+                <div class="content-menu">
+                    <ul class="row content-list">
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                </div>
+            </div>
         </main>
+
+
+
+
+
+
+
         <!-- * Footer section -->
         <footer class="footer-section">
             <!-- * Footer row structure -->
@@ -108,13 +108,15 @@
                 </div>
                 <div class="footer-row-card songs-control-panel">
                     <ul class="songs-control-list">
-                        <li class="list incon"><a href="#"><i class="fa-solid fa-list"></i></a></li>
+                        <li class="list icon"><a href="#"><i class="fa-solid fa-list"></i></a></li>
                         <li class="display icon"><a href="#"><i class="fa-solid fa-display"></i></a></li>
                         <li class="volume icon"><a href="#"><i class="fa-solid fa-volume-high"></i></a></li>
-                       <!--  <li>
-                            <div class="empty-loadingbar"></div>
-                            <div class="loading-bar"></div>
-                        </li> -->
+                        <li>
+                            <div class="songs-control-empty-loadigbar">
+                                <div class="songs-control-loading-bar"></div>
+                            </div>
+                            
+                        </li>
                     </ul>
                 </div>
             </div>
